@@ -10,14 +10,21 @@ The code implements the SybilSCAR algorithm.
 GRAPHFILE stores the edges and weights of an undirected social graph. The format of GRAPHFILE is as follows
 
 0 1 0.8
+
 0 2 0.6
+
 ...
+
 1 0 0.8
+
 ...
+
 2 0 0.6
+
 ...
 
 It means that node 0 and node 1 are connected with edge weight 0.8, etc.
+
 Note that each edge in the GRAPHFILE appears twice, e.g., 0 1 0.8 and 1 0 0.8, and nodes are consecutive integers starting from 0.
 
 ```
@@ -26,12 +33,17 @@ Note that each edge in the GRAPHFILE appears twice, e.g., 0 1 0.8 and 1 0 0.8, a
 PRIORFILE stores the prior probabilities of all nodes of being benign. The format of PRIORFILE is as follows
 
 0 0.9
+
 1 0.5
+
 2 0.1
+
 3 0.8
+
 ...  
 
 It means that node 0 has a prior probability 0.9 of being benign; node 2 has a prior probability 0.1 of being benign (or to say, prior probability 0.9 of being Sybil), etc.
+
 Note that these prior probabilities can be user-defined for labeled benign nodes or/and labled Sybil nodes or/and unlabeled nodes. Or, they can be also learnt via a machine learning classifier. For example, we can extract local node features to train a binary classifier, which produces the probability of being benign for each node. Then, such probabilities can be treated as nodes' priors.
 
 ```
@@ -40,6 +52,7 @@ Note that these prior probabilities can be user-defined for labeled benign nodes
 TRAINFILE consists of two lines, where the first line includes a set of labeled benign nodes, separated by space; and the second line includes a set of Sybil nodes. The format of TRAINFILE is as follows
 
 1 2 4 6 7 8 9 10 ...
+
 0 3 5 ...
 
 It means that "1 2 4 6 7 8 9 10 ..." are labeled benign nodes and "0 3 5 ..." are labeled Sybil nodes.
@@ -90,8 +103,11 @@ By default, WEIGHTED_GRAPH=0 and WEIGHT=0.9.
 PRIORFILE stores the final posterior probabilities of all nodes after running SybilBelief. The format of POSTFILE is as follows
 
 0 1.0
+
 1 0.8
+
 2 0.1
+
 ...  
 
 It means that node 0 has a posterior probability 1.0 of being benign; node 1 has a posterior probability 0.8 of being benign; node 2 has a posterior probability 0.1 of being benign (or to say, probability 0.9 of being Sybil), etc.
