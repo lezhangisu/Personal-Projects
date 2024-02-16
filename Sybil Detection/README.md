@@ -1,4 +1,4 @@
-# sybildetection
+## sybildetection
 Graph structure-based Sybil/fake account detection in online social networks
 
 The codes are implemented in C++ based on SybilBelief, SybilRank, and SybilSCAR algorithms.
