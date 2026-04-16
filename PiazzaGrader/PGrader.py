@@ -59,7 +59,7 @@ class PiazzaGraderApp:
         script_dir = os.path.dirname(os.path.abspath(__file__))
         self.input_dir = tk.StringVar(value=script_dir)  # Directory containing base CSV files
         self.cookie_path = tk.StringVar(value=os.path.join(script_dir, "cookies.txt"))
-        self.output_dir = tk.StringVar(value=os.path.join(script_dir, "output_timed"))
+        self.output_dir = tk.StringVar(value=os.path.join(script_dir, "output"))
 
         # Create UI
         self.create_widgets()
