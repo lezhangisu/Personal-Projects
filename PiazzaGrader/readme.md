@@ -32,11 +32,11 @@ Instead of extracting data using live HTML, this version gets data directly from
 
 - Open Canvas webpage, click `Grades` → `Export` → `Export Entire Gradebook`. Wait until the file download finishes.
 
-  ![canvas](pics/canvas.png)
+  ![canvas](pics/canvas.png){width=60%}
 
 - Open the downloaded gradebook with MS Excel or Google Sheets, keep only the first 4 columns: **Student, ID, SIS Login ID, and Section**. Delete all other columns. Save it as a new CSV file.
 
-  ![csv](pics/csv.png)
+  ![csv](pics/csv.png){width=70%}
 
 - (Optional) Rename the saved CSV file with the following format: `S2026-CPRE-2810-0X-base.csv`, `X` stands for the section number.
 
@@ -74,7 +74,7 @@ Instead of extracting data using live HTML, this version gets data directly from
 
 - You should see the main interface of the program:
 
-  ![program1](pics/program1.png)
+  ![program1](pics/program1.png){width=60%}
 
 - Select desired Section Number, Lecture Number, Beginning and ending Post IDs, Lecture Date, and Lecture start and end time.
 - Select the corresponding CSV file created in section [Get Grade Book CSV from Canvas](#get-grade-book-csv-from-canvas). `S2026-CPRE-2810-0X-base.csv` by default if not specified.
